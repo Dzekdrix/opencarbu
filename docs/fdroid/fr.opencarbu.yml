@@ -1,0 +1,28 @@
+# Draft of the F-Droid recipe (goes to metadata/fr.opencarbu.yml in the fdroiddata repository, see
+# https://f-droid.org/docs/Build_Metadata_Reference/). Not used by the app build.
+Categories:
+  - Navigation
+License: AGPL-3.0-only
+AuthorName: dzekdrix
+WebSite: https://github.com/dzekdrix/opencarbu
+SourceCode: https://github.com/dzekdrix/opencarbu
+IssueTracker: https://github.com/dzekdrix/opencarbu/issues
+Changelog: https://github.com/dzekdrix/opencarbu/blob/HEAD/CHANGELOG.md
+
+AutoName: OpenCarbu
+
+RepoType: git
+Repo: https://github.com/dzekdrix/opencarbu.git
+
+Builds:
+  - versionName: 0.21.4
+    versionCode: 55
+    commit: v0.21.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 0.21.4
+CurrentVersionCode: 55
