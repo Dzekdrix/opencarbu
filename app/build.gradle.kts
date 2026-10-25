@@ -42,6 +42,11 @@ android {
     buildFeatures {
         compose = true
     }
+    // F-Droid does not want the encrypted dependency list that Google's tooling adds to the APK/bundle.
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
 }
 
 dependencies {
