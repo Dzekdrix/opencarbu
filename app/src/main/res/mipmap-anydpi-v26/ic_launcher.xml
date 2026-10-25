@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Adaptive icon: the launcher masks the picture with the shape of its choice (circle, squircle...) and may
+    shrink it, so only the central two thirds are always visible. The pump and the duck sit inside that zone.
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_launcher_background" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>

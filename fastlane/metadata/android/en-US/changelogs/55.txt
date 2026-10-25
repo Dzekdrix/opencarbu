@@ -1,0 +1,2 @@
+• Nearest stations: road distances are fetched in groups of 50 stations, much faster.
+• Performance section in Info.

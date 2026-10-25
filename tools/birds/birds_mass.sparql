@@ -1,0 +1,11 @@
+# Wikidata Query Service (https://query.wikidata.org): body mass of bird species.
+# Used by build_birds.py to estimate each bird's flight speed. Data from Wikidata is CC0.
+#
+# psn: = the "normalized" value of the mass statement, i.e. converted to kilograms whatever the
+# unit it was entered in (g, kg...). A species can have several masses (male, female...):
+# build_birds.py keeps the median and ignores values that cannot be a bird's mass.
+SELECT ?taxon ?mass WHERE {
+  wd:Q5113 ^wdt:P171* ?taxon .
+  ?taxon wdt:P105 wd:Q7432 ;
+         p:P2067/psn:P2067/wikibase:quantityAmount ?mass .
+}

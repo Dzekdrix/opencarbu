@@ -1,0 +1,9 @@
+OpenCarbu affiche les stations-service françaises sur une carte interactive. Chaque station est un point étiqueté avec son prix pour le carburant choisi, coloré selon le rang de ce prix parmi toutes les stations de France : vert (quart le plus bas), jaune, orange, rouge (le plus haut).
+
+• Données officielles : « Prix des carburants en France » (ministère de l'Économie, Licence Ouverte 2.0), actualisées environ toutes les 10 minutes.
+• Fiche d'une station : adresse, distance, chaque carburant avec sa date de mise à jour, enseigne et nom, ouverture dans votre application de cartes pour potentiellement lancer un itinéraire vers la station.
+• Stations les plus proches : les stations autour de vous, avec le prix et le coût du plein et du trajet vers la station.
+• Distance et durée par la route facultatives (désactivées par défaut ; envoie votre position et celle de la station à un serveur d'itinéraires).
+• Historique des prix facultatif sur le téléphone, avec export et import CSV.
+• Recherche d'adresse, rayon configurable, couleurs Material You.
+• Pas de compte, pas de publicité, pas de pistage. Logiciel libre (AGPLv3).

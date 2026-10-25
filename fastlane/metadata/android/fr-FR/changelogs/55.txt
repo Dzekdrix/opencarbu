@@ -1,0 +1,2 @@
+• Stations proches : les distances par la route sont récupérées par groupes de 50 stations, bien plus vite.
+• Section Performances dans Info.

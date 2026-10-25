@@ -1,0 +1,18 @@
+# Wikidata Query Service (https://query.wikidata.org): every bird species with its names and Wikipedia pages.
+# Used by build_birds.py. Data from Wikidata is CC0 (public domain).
+#
+# - Species of the class Aves (Q5113), walking DOWN the tree from Aves (cheap for the server).
+# - French / English name: the "taxon common name" property (P1843) if any, else the item's label
+#   (build_birds.py ignores labels that are just the scientific name).
+# - Wikipedia titles: only if the article exists in that language.
+SELECT ?taxon ?sci ?frCommon ?frLabel ?enCommon ?enLabel ?frTitle ?enTitle WHERE {
+  wd:Q5113 ^wdt:P171* ?taxon .
+  ?taxon wdt:P105 wd:Q7432 ;
+         wdt:P225 ?sci .
+  OPTIONAL { ?taxon wdt:P1843 ?frCommon . FILTER(LANG(?frCommon) = "fr") }
+  OPTIONAL { ?taxon wdt:P1843 ?enCommon . FILTER(LANG(?enCommon) = "en") }
+  OPTIONAL { ?taxon rdfs:label ?frLabel . FILTER(LANG(?frLabel) = "fr") }
+  OPTIONAL { ?taxon rdfs:label ?enLabel . FILTER(LANG(?enLabel) = "en") }
+  OPTIONAL { ?frArticle schema:about ?taxon ; schema:isPartOf <https://fr.wikipedia.org/> ; schema:name ?frTitle . }
+  OPTIONAL { ?enArticle schema:about ?taxon ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?enTitle . }
+}

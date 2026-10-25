@@ -1,0 +1,9 @@
+OpenCarbu shows French fuel stations on an interactive map. Each station is a dot labelled with its price for the selected fuel, coloured by how that price ranks among all stations in France: green (lowest quarter), yellow, orange, red (highest).
+
+• Official data: "Prix des carburants en France" (Ministry of Economy, Licence Ouverte 2.0), refreshed about every 10 minutes.
+• Station sheet: address, distance, every fuel with its last update date, brand and name, open in your map app.
+• Nearest stations: the stations around you, with the price and the cost of the fill-up and of the trip.
+• Optional road distance and time (off by default; sends your position and the station's to a routing server).
+• Optional price history on the phone, with CSV export and import.
+• Address search, configurable radius, Material You colours.
+• No account, no advertising, no tracking. Free software (AGPLv3).

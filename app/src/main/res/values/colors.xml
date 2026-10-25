@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sky colour of the launcher icon (the icon's own background, sampled from its picture). -->
+    <color name="ic_launcher_background">#EBFBFF</color>
+</resources>

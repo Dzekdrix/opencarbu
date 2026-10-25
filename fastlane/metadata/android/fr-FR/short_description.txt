@@ -1,0 +1,1 @@
+Permet de visualiser rapidement et simplement sur une carte les stations essence autour de soi en fonction du carburant choisi
