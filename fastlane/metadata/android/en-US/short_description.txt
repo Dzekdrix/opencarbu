@@ -1,1 +1,1 @@
-Cheapest French fuel stations on a map, from official open data
+Quickly and simply see the fuel stations around you on a map, for your chosen fuel
